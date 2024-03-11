@@ -12,7 +12,7 @@ public class SymMat {
     public static void main(String[] args){
         Scanner read = new Scanner(System.in);
         SymMat obj = new SymMat();
-        int temp, r = 2,c = 2;
+        int r = 2,c = 2;
         int[][] arr = new int [r][c];
         System.out.println("Enter Elements: ");
         for(int i = 0;i<r; i++){
