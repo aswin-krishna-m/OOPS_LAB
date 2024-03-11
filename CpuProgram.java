@@ -19,7 +19,7 @@ public void show(){
 }
 }
 
-class ram {
+static class ram {
     int memory;
     String manufacturer;
     ram(int memory,String manufacturer){
@@ -36,7 +36,7 @@ public class CpuProgram{
     public static void main(String[] args){
         cpu c1 = new cpu(300);
         cpu.processor p1 = c1.new processor(4,"Intel");
-        cpu.ram r1 = c1.new ram(8,"Corsair");
+        cpu.ram r1 = new cpu.ram(8,"Corsair");
         c1.show();
         p1.show();
         r1.show();
