@@ -23,32 +23,27 @@ public class SymMat {
         read.close();
         System.out.println("Entered Matrix is: ");
         obj.showMat(r,c,arr);
-temp = r;
-r = c;
-c = temp;
-
-int[][] tarr = new int [r][c];
-    for(int i = 0;i<r; i++){
-        for(int j = 0;j<c; j++){
-            tarr[i][j] =arr[j][i];
-        }
-    }
-    System.out.println("Transpose Matrix is: ");
-    obj.showMat(r,c,tarr);
-    int f=0;
-    for(int i = 0;i<r; i++){
-        for(int j = 0;j<c; j++){
-            if(arr[i][j]!=tarr[i][j]){
-                f++;
+        int[][] tarr = new int [r][c];
+        for(int i = 0;i<r; i++){
+            for(int j = 0;j<c; j++){
+                tarr[i][j] =arr[j][i];
             }
-        if(f!=0){
-            break;
         }
-    }
-    }
-    if (f>0) {
-        System.out.println("Matrix is Not Symmetric");
-    }else{
+        System.out.println("Transpose Matrix is: ");
+        obj.showMat(r,c,tarr);
+        int f=0;
+        for(int i = 0;i<r; i++){
+            for(int j = 0;j<c; j++){
+                if(arr[i][j]!=tarr[i][j]){
+                    f++;
+                }
+            }
+            if(f!=0){
+                System.out.println("Matrix is Not Symmetric");
+                break;
+            }
+        }
+    if (f==0){
     System.out.println("Matrix is Symmetric");
     }
 }
