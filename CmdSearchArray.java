@@ -32,12 +32,7 @@ class CmdSearchArray{
 			break;
 		}
 	}
-	if(f==0){
-		System.out.println("Element not found");
-	}
-	else{
-		System.out.println("Element found");
-	}
+	System.out.println(f==0 ? "Element not found" : "Element found");
 	}
 }
 

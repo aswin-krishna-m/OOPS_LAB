@@ -5,12 +5,7 @@ public class Palindrome {
         for(int i=len-1;i>=0;i--){
             rev = rev+str.charAt(i);
         }
-        if(str.toLowerCase().equals(rev.toLowerCase())){
-            System.out.println("String is palindrome");
-        }
-        else{
-            System.out.println("String is not palindrome ");
-        }
+        System.out.println(str.toLowerCase().equals(rev.toLowerCase()) ? "String is palindrome" : "String is not palindrome ");
     } 
 }
 
