@@ -20,6 +20,7 @@ public class MatrixAdd {
             this.arr[i][j] = k;
             }
         }
+        r.close();
         return arr;
     }
     public int[][] addMatrix(int[][] a, int[][] b){
@@ -35,6 +36,7 @@ public class MatrixAdd {
         System.out.print("Enter Row And Column: ");
         int r1 = read.nextInt();
         int c1 = read.nextInt();
+        read.close();
         MatrixAdd x = new MatrixAdd(r1,c1);
         int[][] a1 = x.readMatrix();
 
