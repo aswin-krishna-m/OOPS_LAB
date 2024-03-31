@@ -19,7 +19,7 @@ class CmdSearchArray{
 		}
 	}
 	System.out.println("Array after sorting: ");
-	for(int i=0;i<len+1;i++){
+	for(int i=0;i<=len;i++){
 		System.out.print(arr[i]+" ");
 	}
 	System.out.print("\nEnter element to be searched : ");
