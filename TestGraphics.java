@@ -9,7 +9,7 @@ public class TestGraphics {
  System.out.println("Area of Rectangle: " + Rectangle.calculateArea());
  System.out.println("Area of Triangle: " + Triangle.calculateArea());
  System.out.println("Area of Square: " + Square.calculateArea());
- System.out.println("Area of Circle: " + String.format("%.4f",Circle.calculateArea()));
+ System.out.println("Area of Circle: "+Circle.calculateArea());
  }
 }
 
