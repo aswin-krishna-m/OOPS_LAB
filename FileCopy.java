@@ -19,3 +19,13 @@ class FileCopy{
  fo.close();
  }
 }
+
+
+// **************OUTPUT**************
+
+/*
+Enter source file name: f1.txt
+Enter destination file name: f2.txt
+Copied to f2.txt
+
+*/
